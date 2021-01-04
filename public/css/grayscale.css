@@ -1,0 +1,138 @@
+
+.nav-link{
+  font-size: 25px;
+  font-family: 'Signika';
+}
+.btn,.card-header,h1,h2,h3{
+  font-family: 'Signika';
+}
+
+#masthead-1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/inicio-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#masthead-1 #header-1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  background-color: rgba(200,30,35,0.6);
+}
+
+#masthead-2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/inicio-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#masthead-2 #header-1{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  background-color: rgba(200,30,35,0.6);
+}
+
+#masthead-3{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/inicio-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#masthead-3 #header-1{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  background-color: rgba(200,30,35,0.6);
+}
+#masthead-3 #header-2{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  background-color: rgba(253,126,20,0.6);
+}
+
+#masthead-4{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 50rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/inicio-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#masthead-4 #header-1{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  background-color: rgba(200,30,35,0.6);
+}
+
+#producto{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/producto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#contacto{
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#cotiza{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/cotiza.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#producto{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/producto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#quienes-somos{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/producto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.btn-danger .bg-danger{
+  background-color:rgba(200,30,35,1);
+}
+
+#footer {
+  padding: 3rem 0;
+  background-color: rgba(0, 0, 0,1);
+}
+
+
+
