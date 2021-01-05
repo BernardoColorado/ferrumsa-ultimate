@@ -39,7 +39,7 @@
                     <textarea rows="5" class="form-control rounded-0 flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="mensaje" id="inputCotizacion" placeholder="mensaje" required></textarea>
                   </div>
                   <div class="form-group col-lg-12">
-                    <button type="submit" class="btn btn-danger rounded-0 mx-auto btn-block">COTIZAR</button>
+                    <button type="submit" class="btn btn-danger rounded-0 mx-auto btn-block" style="background-color:rgba(200,30,35,1);">COTIZAR</button>
                   </div>
                 </div>
               </form>
@@ -63,7 +63,7 @@
               </div>
               <div class="row">
                 <div class="col-lg-12">
-                  <h4 class="text-light">Telefono: +52 (81)13 57 89 95</h4>
+                  <a href="{{socialNetworks.whatsapp}}"><h4 class="text-light">Telefono: +52 (81)13 57 89 95</h4></a>
                 </div>
               </div>
             </div>

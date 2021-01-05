@@ -25,23 +25,24 @@ class Producto {
    */
   protected $img;
   /**
+   * @ORM\Column(type="string", length=256, name="pdf") 
+   */
+  protected $pdf;
+  /**
    * @ORM\ManyToOne(targetEntity="Categoria", inversedBy="productos")
    * @ORM\JoinColumn(name="id_categoria",referencedColumnName="id", onDelete="CASCADE")
    */
   protected $categoria;
   /**
-   * @ORM\OneToMany(targetEntity="Subproducto", mappedBy="producto")
+   * @ORM\OneToMany(targetEntity="Descripcion", mappedBy="producto")
    */
-  private $subproductos;
+  private $descripciones;
 
   public function __construct(){
-    $this->subproductos = new ArrayCollection();
+    $this->descripciones = new ArrayCollection();
   }
   public function getId():int{
     return $this->id;
-  }
-  public function getDescripcion():string{
-    return $this->descripcion;
   }
   public function getNombre():string{
     return $this->nombre;
@@ -49,11 +50,14 @@ class Producto {
   public function getImg():string{
     return $this->img;
   }
+  public function getPdf():string{
+    return $this->pdf;
+  }
   /**
-   * @return Collection|Subproducto[]
+   * @return Collection|Descripcion[]
    */
-  public function getSubproductos():Collection{
-    return $this->subproductos;
+  public function getDescripciones():Collection{
+    return $this->descripciones;
   }
 
 }

@@ -11,9 +11,9 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 50rem;
+  min-height: 60rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/inicio-1.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/inicio-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -29,9 +29,9 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 50rem;
+  min-height: 60rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/inicio-2.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/inicio-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -47,9 +47,9 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 50rem;
+  min-height: 60rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/inicio-3.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/inicio-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -70,7 +70,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 50rem;
+  min-height: 60rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/inicio-3.jpg");
   background-position: center;
@@ -94,11 +94,12 @@
 }
 
 #contacto{
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/background/contacto.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 85%, #000000 100%), url("../img/background/contacto.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 60rem;
 }
 
 #cotiza{
@@ -107,6 +108,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 60rem;
 }
 
 #producto{
@@ -115,6 +117,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 60rem;
 }
 
 #quienes-somos{
@@ -123,9 +126,10 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 60rem;
 }
 
-.btn-danger .bg-danger{
+.bg-danger{
   background-color:rgba(200,30,35,1);
 }
 

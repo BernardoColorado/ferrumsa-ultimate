@@ -7,7 +7,7 @@
   <!-- End Navigation -->
 
   <!-- Footer -->
-  {% include 'templates/partials/producto/producto-categoria-section.php' %}
+  {% include 'templates/partials/producto/producto-detalle-section.php' %}
   <!-- Termina Footer -->
 
   <!-- Footer -->
