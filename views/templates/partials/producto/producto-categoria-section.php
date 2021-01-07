@@ -2,7 +2,7 @@
 
   <div class="container py-5">
     <div class="row">
-      <div class="col-lg-7 mx-auto">
+      <div class="col-lg-6 mx-auto">
         <div class="card rounded-0 border-0">
           <div class="row no-gutters">
             <div class="col-lg-12">

@@ -64,10 +64,9 @@ class ProductoController extends Controller{
     //mandamos llamar ORM
     $idProducto = intval($args['id']);    
     $producto = $this->productoRepository->find($idProducto);
+    $categoria = $producto->getCategoria();
     $viewModel['socialNetworks']=$this->app['socialNetworks'];
     $viewModel['producto']=$producto;
-
-    print_r($viewModel['socialNetworks']);
     //rendereamos
     $this->twig->render($response,'layouts/producto-detalle.php',$viewModel);
 
