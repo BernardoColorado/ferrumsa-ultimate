@@ -53,6 +53,9 @@ class Producto {
   public function getPdf():string{
     return $this->pdf;
   }
+  public function getCategoria():Categoria{
+    return $this->categoria;
+  }
   /**
    * @return Collection|Descripcion[]
    */
