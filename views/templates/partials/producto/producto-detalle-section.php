@@ -39,25 +39,6 @@
       </div>
     </div>
 
-    <div class="row no-gutters">
-      <div class="col-lg-4">
-        <div class="card border-0 rounded-0 h-100">
-          <img src="{{ base_url() }}/img/producto/{{producto.getImg() }}" alt="" class="card-img border-0 rounded-0">
-          <div class="card-footer p-0">
-            <a href="{{ base_url() }}/pdf/{{producto.getPdf()}}" class="btn btn-warning rounded-0 btn-block text-white">DATASHEET</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="card card-body h-100 border-0 rounded-0 bg-light">
-          <h3 class="card-title text-danger text-center text-uppercase">{{ producto.getNombre() }}</h3>
-          {% for descripcion in producto.getDescripciones() %}
-            <p class="text-dark">{{ descripcion.getTexto() }}</p>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
   </div>
   
 
