@@ -1,5 +1,51 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.6deb5ubuntu0.5
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: localhost:3306
+-- Tiempo de generación: 09-01-2021 a las 11:28:15
+-- Versión del servidor: 5.7.32-0ubuntu0.18.04.1
+-- Versión de PHP: 7.2.24-0ubuntu0.18.04.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Base de datos: `ferrumsa`
+--
 CREATE DATABASE IF NOT EXISTS `ferrumsa` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `ferrumsa`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `acabados`
+--
+
+DROP TABLE IF EXISTS `acabados`;
+CREATE TABLE `acabados` (
+  `id` int(11) NOT NULL,
+  `img` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `nombre` varchar(64) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Truncar tablas antes de insertar `acabados`
+--
+
+TRUNCATE TABLE `acabados`;
+--
+-- Volcado de datos para la tabla `acabados`
+--
+
+INSERT INTO `acabados` (`id`, `img`, `nombre`) VALUES
+(1, 'galvanizado.jpg', 'galvanizado'),
+(2, 'pintro.jpg', 'pintro'),
+(3, 'zintroalum.jpg', 'zintroalum'),
+(4, 'primer-verde', 'primer verde.jpg'),
+(5, 'decapado.jpg', 'decapado'),
+(6, 'caliente.jpg', 'caliente'),
+(7, 'frio.jpg', 'frío');
 
 -- --------------------------------------------------------
 
@@ -8,12 +54,11 @@ USE `ferrumsa`;
 --
 
 DROP TABLE IF EXISTS `categorias`;
-CREATE TABLE IF NOT EXISTS `categorias` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `categorias` (
+  `id` int(11) NOT NULL,
   `nombre` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  `img` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `img` varchar(256) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Truncar tablas antes de insertar `categorias`
@@ -38,13 +83,11 @@ INSERT INTO `categorias` (`id`, `nombre`, `img`) VALUES
 --
 
 DROP TABLE IF EXISTS `descripciones`;
-CREATE TABLE IF NOT EXISTS `descripciones` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `descripciones` (
+  `id` int(11) NOT NULL,
   `id_producto` int(11) DEFAULT NULL,
-  `texto` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `IDX_3B8E30E8F760EA80` (`id_producto`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `texto` varchar(256) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Truncar tablas antes de insertar `descripciones`
@@ -98,18 +141,29 @@ INSERT INTO `descripciones` (`id`, `id_producto`, `texto`) VALUES
 (54, 16, 'Los caballetes mejoran los tiempos de instalación de techumbres de lámina ya que facilitan la sujeción de la misma, además de dar una mejor vista aparente.'),
 (55, 17, 'Los caballetes mejoran los tiempos de instalación de techumbres de lámina ya que facilitan la sujeción de la misma, además de dar una mejor vista aparente.');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos`
+--
+
 DROP TABLE IF EXISTS `productos`;
-CREATE TABLE IF NOT EXISTS `productos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `productos` (
+  `id` int(11) NOT NULL,
   `id_categoria` int(11) DEFAULT NULL,
   `nombre` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
   `img` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  `pdf` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `IDX_767490E6CE25AE0A` (`id_categoria`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `pdf` varchar(256) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Truncar tablas antes de insertar `productos`
+--
 
 TRUNCATE TABLE `productos`;
+--
+-- Volcado de datos para la tabla `productos`
+--
 
 INSERT INTO `productos` (`id`, `id_categoria`, `nombre`, `img`, `pdf`) VALUES
 (1, 1, 'Rollos de Acero', 'rollos-de-acero.jpg', 'rollos-de-acero.pdf'),
@@ -129,6 +183,115 @@ INSERT INTO `productos` (`id`, `id_categoria`, `nombre`, `img`, `pdf`) VALUES
 (16, 5, 'Caballete Liso', 'caballete-liso.jpg', 'caballete-liso.pdf'),
 (17, 5, 'Caballete Dentado', 'caballete-dentado.jpg', 'caballete-dentado.pdf');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos_acabados`
+--
+
+DROP TABLE IF EXISTS `productos_acabados`;
+CREATE TABLE `productos_acabados` (
+  `producto_id` int(11) NOT NULL,
+  `acabado_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Truncar tablas antes de insertar `productos_acabados`
+--
+
+TRUNCATE TABLE `productos_acabados`;
+--
+-- Volcado de datos para la tabla `productos_acabados`
+--
+
+INSERT INTO `productos_acabados` (`producto_id`, `acabado_id`) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(1, 4),
+(1, 5),
+(1, 6),
+(1, 7),
+(2, 1),
+(2, 2),
+(2, 3),
+(2, 5),
+(2, 6),
+(2, 7),
+(4, 1),
+(4, 2),
+(4, 3),
+(4, 4),
+(4, 5),
+(4, 6),
+(4, 7);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `acabados`
+--
+ALTER TABLE `acabados`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `descripciones`
+--
+ALTER TABLE `descripciones`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_3B8E30E8F760EA80` (`id_producto`);
+
+--
+-- Indices de la tabla `productos`
+--
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_767490E6CE25AE0A` (`id_categoria`);
+
+--
+-- Indices de la tabla `productos_acabados`
+--
+ALTER TABLE `productos_acabados`
+  ADD PRIMARY KEY (`producto_id`,`acabado_id`),
+  ADD KEY `IDX_897A66867645698E` (`producto_id`),
+  ADD KEY `IDX_897A6686ED76B1B5` (`acabado_id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `acabados`
+--
+ALTER TABLE `acabados`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT de la tabla `categorias`
+--
+ALTER TABLE `categorias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT de la tabla `descripciones`
+--
+ALTER TABLE `descripciones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+--
+-- AUTO_INCREMENT de la tabla `productos`
+--
+ALTER TABLE `productos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+--
+-- Restricciones para tablas volcadas
+--
+
 --
 -- Filtros para la tabla `descripciones`
 --
@@ -140,3 +303,10 @@ ALTER TABLE `descripciones`
 --
 ALTER TABLE `productos`
   ADD CONSTRAINT `FK_767490E6CE25AE0A` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id`) ON DELETE CASCADE;
+
+--
+-- Filtros para la tabla `productos_acabados`
+--
+ALTER TABLE `productos_acabados`
+  ADD CONSTRAINT `FK_897A66867645698E` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `FK_897A6686ED76B1B5` FOREIGN KEY (`acabado_id`) REFERENCES `acabados` (`id`) ON DELETE CASCADE;
