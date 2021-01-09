@@ -1,5 +1,5 @@
   <section id="cotiza" class="py-5">
-    <div class="container">
+    <div class="container py-5">
 
       <div class="row">
 

@@ -1,11 +1,11 @@
-  <section id="quienes-somos" class="bg-dark">
+  <section id="quienes-somos" class="bg-dark py-5">
 
     <div class="container py-5">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-6 mx-auto">
           <div class="card rounded-0 border-0">
             <div class="card-body bg-danger">
-              <h2 class="card-title text-light text-uppercase text-center">¿Quienes Somos?</h2>
+              <h3 class="card-title text-light text-uppercase text-center">¿quiénes somos?</h3>
             </div>
           </div>
         </div>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="container-fluid py-5">
-      <div class="row">
+      <div class="row py-5">
 
         <div class="col-sm-12 col-md-4 col-lg-3 mt-5 mx-auto">
           <div class="card h-100 border-0 bg-transparent rounded-0">
