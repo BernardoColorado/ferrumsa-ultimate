@@ -31,7 +31,7 @@
             <div class="card border-0 rounded-0 bg-danger">
               <img src="{{ base_url() }}/img/producto/{{ producto.img }}" alt="" class="card-img rounded-0">
               <div class="card-body rounded-0 bg-danger">
-                <h3 class="text-light text-center text-uppercase">{{ producto.nombre }}</h3>
+                <h4 class="text-light text-center text-uppercase">{{ producto.nombre }}</h4>
               </div>
             </div>              
           </a>
