@@ -37,9 +37,15 @@ class Producto {
    * @ORM\OneToMany(targetEntity="Descripcion", mappedBy="producto")
    */
   private $descripciones;
-
+  /**
+   * @ORM\ManyToMany(targetEntity="Acabado", inversedBy="productos")
+   * @ORM\JoinTable(name="productos_acabados")
+   */
+  protected $acabados;
+   
   public function __construct(){
     $this->descripciones = new ArrayCollection();
+    $this->acabados = new ArrayCollection();
   }
   public function getId():int{
     return $this->id;
@@ -61,6 +67,12 @@ class Producto {
    */
   public function getDescripciones():Collection{
     return $this->descripciones;
+  }
+  /**
+   * @return Collection|Acabado[]
+   */
+  public function getAcabados():Collection{
+    return $this->acabados;
   }
 
 }
