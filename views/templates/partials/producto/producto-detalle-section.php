@@ -44,8 +44,8 @@
             <h3 class="card-title text-danger text-center text-uppercase">Acabados Disponibles</h3>
               <div class="row">
               {% for acabado in producto.getAcabados() %}
-                <div class="col-lg-2 mx-auto">
-                  <img src="{{ base_url() }}/img/acabado/{{ acabado.getImg() }}" width="100" class="img-fluid rounded-0"/>
+                <div class="col-lg-2 col-md-3 col-sm-4 mx-auto">
+                  <img src="{{ base_url() }}/img/acabado/{{ acabado.getImg() }}" width="100" class="img-fluid rounded-0 my-1"/>
                 </div>
               {% endfor %}
               </div>
