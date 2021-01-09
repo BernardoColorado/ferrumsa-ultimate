@@ -43,9 +43,11 @@
     </div>
 
     <div class="row no-gutters">
+    {% for acabado in producto.getAcabados() %}
       <div class="col-lg-2">
-        <img class="img-fluid" src="{{ base_url() }}/" alt="">
+        <img class="img-fluid" src="{{ base_url() }}/img/acabado/{{ acabado.getImg() }}" alt="">
       </div>
+    {% endfor %}
     </div>
 
   </div>
