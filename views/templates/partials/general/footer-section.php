@@ -10,7 +10,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row my-3">
         <div class="col-lg-12">
           <small>Derechos Reservados &copy; Ferrumsa 2020</small>  
         </div>
