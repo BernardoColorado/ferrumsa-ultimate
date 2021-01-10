@@ -12,7 +12,7 @@
       </div>
       <div class="row my-3">
         <div class="col-lg-22">
-          <small>Derechos Reservados &copy; Ferrumsa 2020</small>  
+          <small class="text-center">Derechos Reservados &copy; Ferrumsa 2020</small>  
         </div>
       </div>
     </div>
