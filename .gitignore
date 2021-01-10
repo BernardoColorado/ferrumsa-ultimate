@@ -2,4 +2,3 @@ composer.lock
 config/config.json
 vendor/*
 public/index.php
-ferrumsa.sql
