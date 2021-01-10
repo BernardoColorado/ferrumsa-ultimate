@@ -27,7 +27,7 @@
       <div class="row">
         {% for producto in productos %}
         <div class="col-lg-6 mb-5 mx-auto">
-          <a href="{{ base_url() }}/page/producto/detalle/{{producto.id}}">
+          <a href="{{ base_url() }}/producto/detalle/{{producto.id}}">
             <div class="card border-0 rounded-0 bg-danger">
               <img src="{{ base_url() }}/img/producto/{{ producto.img }}" alt="" class="card-img rounded-0">
               <div class="card-body rounded-0 bg-danger">

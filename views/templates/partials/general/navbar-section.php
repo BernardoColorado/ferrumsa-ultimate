@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbarStatic">
     <div class="collapse navbar-collapse" id="navbarResponsive2">
-      <a href="{{ base_url() }}/page" class="navbar-brand">
+      <a href="{{ base_url() }}" class="navbar-brand">
         <img src="{{ base_url() }}/img/logo/ferrumsa-logo-mediano.jpg" width="320" height="" alt="" class="img-fluid">
       </a>
       <ul class="navbar-nav w-100 justify-content-end" id="navbarSocial">
@@ -18,11 +18,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mx-auto my-2">
-        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/page">inicio</a>
-        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/page/quienes-somos">¿quienes somos?</a>
-        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/page/producto">productos</a>
-        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/page/contacto">contacto</a>
-        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/page/cotiza">cotiza</a>
+        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}">inicio</a>
+        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/quienes-somos">¿quienes somos?</a>
+        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/producto">productos</a>
+        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/contacto">contacto</a>
+        <a class="nav-link text-light text-uppercase font-weight-bold mx-5 my-2" href="{{ base_url() }}/cotiza">cotiza</a>
       </ul>
     </div>
   </nav>
