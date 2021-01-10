@@ -1,6 +1,6 @@
   <section id="footer" class="text-center text-light sticky-bottom">
     <div class="container">
-      <div class="row my-3">
+      <div class="row my-5">
         <div class="col-lg-3 mx-auto">
           <div class="social d-flex justify-content-center">
             <a class="mx-5 text-white" href="{{socialNetworks.whatsapp}}"><h2><i class="fab fa-whatsapp"></i></h2></a>
@@ -10,8 +10,8 @@
           </div>
         </div>
       </div>
-      <div class="row my-3">
-        <div class="col-lg-22">
+      <div class="row my-5">
+        <div class="col-lg-3 mx-auto">
           <small class="text-center">Derechos Reservados &copy; Ferrumsa 2020</small>  
         </div>
       </div>
