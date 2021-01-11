@@ -1,7 +1,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbarStatic">
     <div class="collapse navbar-collapse" id="navbarResponsive2">
       <a href="{{ base_url() }}" class="navbar-brand">
-        <img src="{{ base_url() }}/img/logo/ferrumsa-logo-mediano.jpg" width="300" height="" alt="" class="img-fluid">
+        <img src="{{ base_url() }}/img/logo/ferrumsa-logo-mediano.jpg" width="280" height="" alt="" class="img-fluid">
       </a>
       <ul class="navbar-nav w-100 justify-content-end" id="navbarSocial">
         <li class="nav-item"><a class="nav-link text-danger" href="{{socialNetworks.whatsapp}}"><i class="fab fa-whatsapp"></i></a></li>
