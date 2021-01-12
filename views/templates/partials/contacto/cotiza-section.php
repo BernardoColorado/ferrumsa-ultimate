@@ -21,7 +21,7 @@
             </div>
 
             <div class="card-body rounded-0 bg-dark">
-              <form action="{{ base_url() }}/page/contacto" method="POST">
+              <form action="{{ base_url() }}/cotiza" method="POST">
                 <div class="row">
                   <div class="form-group col-lg-6">
                     <input type="text" class="form-control rounded-0 flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="nombre" id="inputName" placeholder="nombre completo" required>
