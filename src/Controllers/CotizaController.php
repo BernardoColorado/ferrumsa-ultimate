@@ -32,6 +32,10 @@ class CotizaController extends Controller{
 
   public function cotizar(RequestInterface $request, $response){
 
+    $cotizacionRequest = $request->getParsedBody();
+
+    print_r($cotizacionRequest);
+
     $viewModel=[];
     $viewModel['mailed']=false;
     $viewModel['socialNetworks']=$this->app['socialNetworks'];
