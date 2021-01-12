@@ -36,6 +36,8 @@ class CotizaController extends Controller{
 
     print_r($cotizacionRequest);
 
+    die();
+
     $viewModel=[];
     $viewModel['mailed']=false;
     $viewModel['socialNetworks']=$this->app['socialNetworks'];
