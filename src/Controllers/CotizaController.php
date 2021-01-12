@@ -30,6 +30,15 @@ class CotizaController extends Controller{
 
   }
 
+  public function cotizar(RequestInterface $request, $response){
+
+    $viewModel=[];
+    $viewModel['mailed']=false;
+    $viewModel['socialNetworks']=$this->app['socialNetworks'];
+    $this->twig->render($response,'layouts/cotiza.php',$viewModel);
+
+  }
+
 }
 
 ?>

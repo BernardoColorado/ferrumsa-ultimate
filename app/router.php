@@ -8,3 +8,5 @@ $app->get('/producto/detalle/{id}', App\Controllers\ProductoController::class.':
 $app->get('/contacto', App\Controllers\ContactoController::class.':index');
 $app->post('/contacto', App\Controllers\ContactoController::class.':contacto');
 $app->get('/cotiza', App\Controllers\CotizaController::class.':index');
+$app->post('/cotiza', App\Controllers\CotizaController::class.':cotiza');
+
