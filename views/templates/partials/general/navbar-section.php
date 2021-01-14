@@ -8,7 +8,7 @@
           <a href="{{socialNetworks.whatsapp}}">
             <span class="text-danger text-uppercase">horario de atención: </span><br>
             <small class="text-dark ">L-V 8:30 am - 5:30 PM</small><br>
-            <span class="text-danger text-uppercase">+52(81) 13 90 67 96</span>
+            <span class="text-danger text-uppercase">+52(81) 13 57 89 95</span>
           </a>
         </li>
         <li class="nav-item mt-4"><a class="nav-link text-danger" href="{{socialNetworks.whatsapp}}"><i class="fab fa-whatsapp"></i></a></li>
