@@ -25,7 +25,7 @@
         <div class="col-lg-3">
           <img src="{{ base_url() }}/img/producto/{{ producto.getImg() }}" alt="{{ base_url() }}/img/" class="card-img border-0 rounded-0">
           <div class="card-footer p-0">
-            <a href="{{ base_url() }}/pdf/{{ producto.getPdf() }}" class="btn btn-warning rounded-0 btn-block text-white">FICHA TÉCNICA</a>
+            <a href="{{ base_url() }}/pdf/{{ producto.getPdf() }}" class="btn btn-danger rounded-0 btn-block text-white">FICHA TÉCNICA</a>
           </div>
         </div>
         <div class="col-lg-9">
