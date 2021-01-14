@@ -6,7 +6,7 @@
       <ul class="navbar-nav w-100 justify-content-end" id="navbarSocial">
         <li class="nav-item mr-5">
           <a href="{{socialNetworks.whatsapp}}">
-            <span class="text-danger text-uppercase">horario de atención: </span><br>
+            <span class="text-danger text-uppercase">horario de atención:</span><br>
             <small class="text-dark ">L-V 8:30 am - 5:30 PM</small><br>
             <span class="text-danger text-uppercase">+52(81) 13 57 89 95</span>
           </a>
