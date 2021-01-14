@@ -4,6 +4,9 @@
         <img src="{{ base_url() }}/img/logo/ferrumsa-logo-mediano.jpg" width="280" height="" alt="" class="img-fluid">
       </a>
       <ul class="navbar-nav w-100 justify-content-end" id="navbarSocial">
+        <li class="nav-item"><a href="{{socialNetworks.whatsapp}}"><span class="text-danger text-uppercase">horario de atención</span></a></li>
+      </ul>
+      <ul class="navbar-nav w-100 justify-content-end" id="navbarSocial">
         <li class="nav-item"><a class="nav-link text-danger" href="{{socialNetworks.whatsapp}}"><i class="fab fa-whatsapp"></i></a></li>
         <li class="nav-item"><a class="nav-link text-danger" href="{{socialNetworks.instagram}}" class="text-warning"><i class="fab fa-instagram"></i></a></li>
         <li class="nav-item"><a class="nav-link text-danger" href="{{socialNetworks.facebook}}" class="text-warning"><i class="fab fa-facebook"></i></a></li>
