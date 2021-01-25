@@ -24,9 +24,12 @@
       <div class="row no-gutters">
         <div class="col-lg-3">
           <img src="{{ base_url() }}/img/producto/{{ producto.getImg() }}" alt="{{ base_url() }}/img/" class="card-img border-0 rounded-0">
+          {% if producto.getPdf() is null %}
+          {% else %}
           <div class="card-footer p-0">
             <a href="{{ base_url() }}/pdf/{{ producto.getPdf() }}" class="btn btn-danger rounded-0 btn-block text-white">FICHA TÉCNICA</a>
           </div>
+          {% endif %}
         </div>
         <div class="col-lg-9">
           <div class="card-body h-100 border-0 rounded-0 bg-light">

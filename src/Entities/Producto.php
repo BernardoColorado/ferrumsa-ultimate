@@ -56,8 +56,13 @@ class Producto {
   public function getImg():string{
     return $this->img;
   }
-  public function getPdf():string{
-    return $this->pdf;
+  public function getPdf():?string{
+    if(isset($this->pdf)){
+      return $this->pdf;
+    }
+    else{
+      return null;
+    }
   }
   public function getCategoria():Categoria{
     return $this->categoria;
